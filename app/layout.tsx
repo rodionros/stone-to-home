@@ -1,9 +1,30 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
+const sfPro = localFont({
+  src: [
+    {
+      path: '../public/fonts/SFProDisplay-Regular.ttf',
+      weight: '400'
+    },
+    {
+      path: '../public/fonts/SFProDisplay-Bold.ttf',
+      weight: '700'
+    },
+    {
+      path: '../public/fonts/SFProDisplay-Semibold.ttf',
+      weight: '600'
+    },
+    {
+      path: '../public/fonts/SFProDisplay-Light.ttf',
+      weight: '300'
+    }
+  ],
+  variable: '--font-poppins',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Камень в дом",
@@ -17,7 +38,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={sfPro.className}>
+        {children}
+      </body>
     </html>
   );
 }
