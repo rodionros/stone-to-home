@@ -30,6 +30,7 @@ export const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 60%;
+  overflow: hidden;
 `
 export const CardTextWrapper = styled.div`
   display: flex;
