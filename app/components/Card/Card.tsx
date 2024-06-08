@@ -15,11 +15,9 @@ const Card = ({name, description, image}: ICardProps) => {
           <Image
               src={image}
               fill
-              priority={true}
-              style={{objectFit:"cover"}}
               alt="card"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               quality={100}
+              unoptimized
           />
         </ImageWrapper>
         <CardTextWrapper>

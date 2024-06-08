@@ -2,10 +2,12 @@ import { CardGrid } from "@/app/styles";
 import { Card, Section } from "./components";
 import { links, products } from "@/app/data/products";
 import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header/Header";
 
 export default function Home() {
   return (
     <main>
+      <Header />
       <Section title="Мы изготавливаем">
         <CardGrid>
           {products.map((item) => (

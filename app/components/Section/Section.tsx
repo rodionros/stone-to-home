@@ -8,7 +8,6 @@ interface ISectionProps {
 }
 
 const Section = ({ title, children, image }: ISectionProps) => {
-  console.log(image)
   return (
       <section>
         {title && <SectionTitle>{title}</SectionTitle>}
