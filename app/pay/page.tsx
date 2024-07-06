@@ -1,6 +1,6 @@
-import { CardGrid } from "@/app/styles";
-import { Card, Section } from "../components";
-import {links, products, works} from "@/app/data/products";
+
+import { Section } from "../components";
+import {links} from "@/app/data/products";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
