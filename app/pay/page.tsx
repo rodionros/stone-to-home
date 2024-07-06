@@ -4,7 +4,7 @@ import {links, products, works} from "@/app/data/products";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
-export default function About() {
+export default function Pay() {
   return (
       <main>
         <Header />

@@ -1,8 +1,7 @@
 import React from 'react';
 import { IFooterLinks } from "@/app/types/product";
-import { FooterWrapper, LinksWrapper, PhoneWrapper } from "@/app/components/Footer/styles";
+import {FooterWrapper, Link, LinksWrapper, PhoneWrapper} from "@/app/components/Footer/styles";
 import { PhoneIcon } from '@heroicons/react/24/outline'
-import Link from "next/link";
 
 interface IFooterProps {
   links: IFooterLinks[]
@@ -15,7 +14,7 @@ const Footer = ({links}: IFooterProps) => {
       <FooterWrapper>
         <LinksWrapper>
           {links.map((link) => (
-            <Link style={{color: '#fff',fontSize: 22}} href={link.url} key={link.id}>{link.name}</Link>
+            <Link href={link.url} key={link.id}>{link.name}</Link>
           ))}
         </LinksWrapper>
         <PhoneWrapper>
