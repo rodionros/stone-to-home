@@ -15,7 +15,7 @@ const Footer = ({links}: IFooterProps) => {
       <FooterWrapper>
         <LinksWrapper>
           {links.map((link) => (
-            <Link style={{fontSize: 22, color: '#fff'}} href={link.url} key={link.id}>{link.name}</Link>
+            <Link  replace style={{fontSize: 22, color: '#fff'}} href={link.url} key={link.id}>{link.name}</Link>
           ))}
         </LinksWrapper>
         <PhoneWrapper>
