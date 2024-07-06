@@ -18,11 +18,11 @@ const BurgerMenu = () => {
           <span/>
         </BurgerButton>
         <Menu $isOpen={isOpen}>
-          <MenuLink href="#">Главная</MenuLink>
-          <MenuLink href="#">Каталог камня</MenuLink>
-          <MenuLink href="#">Услуги</MenuLink>
-          <MenuLink href="#">Доставка и оплата</MenuLink>
-          <MenuLink href="#">О нас</MenuLink>
+          <MenuLink href="/">Главная</MenuLink>
+          <MenuLink href="#catalog">Каталог камня</MenuLink>
+          <MenuLink href="#services">Услуги</MenuLink>
+          <MenuLink href="/pay">Доставка и оплата</MenuLink>
+          <MenuLink href="/about">О нас</MenuLink>
         </Menu>
       </div>
   );

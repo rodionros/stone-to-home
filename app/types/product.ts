@@ -10,3 +10,9 @@ export interface IFooterLinks {
   name: string
   url: string
 }
+
+export interface IWork {
+  id: number
+  image: string
+  description: string
+}

@@ -1,4 +1,4 @@
-import {IFooterLinks, IProduct} from "@/app/types/product";
+import {IFooterLinks, IProduct, IWork} from "@/app/types/product";
 
 export const products: IProduct[] = [
   {
@@ -56,5 +56,53 @@ export const links: IFooterLinks[] = [
     id: 3,
     name: 'Доставка и оплата',
     url: '/pay'
+  },
+];
+
+export const works: IWork[] = [
+  {
+    id: 1,
+    image: '/images/work-1.png',
+    description: 'Ступени из натурального гранита'
+  },
+  {
+    id: 2,
+    image: '/images/work-2.png',
+    description: 'Барная стойка из искусственного камня'
+  },
+  {
+    id: 3,
+    image: '/images/work-3.png',
+    description: 'Столешница'
+  },
+  {
+    id: 4,
+    image: '/images/work-4.png',
+    description: 'Лестница из натурального гранита'
+  },
+  {
+    id: 5,
+    image: '/images/work-5.png',
+    description: 'Подоконник из натурального камня'
+  },
+  {
+    id: 6,
+    image: '/images/work-6.png',
+    description: 'Санузел'
+  },
+  {
+    id: 7,
+    image: '/images/work-7.png',
+    description: 'Столешница в ванную комнату из искусственного камня'
+  },
+  {
+    id: 8,
+    image: '/images/work-8.png',
+    description: 'Столешница из гранита'
+  },
+  {
+    id: 9,
+    image: '/images/work-9.png',
+    description: 'Лестница из натурального камня'
   },
 ];

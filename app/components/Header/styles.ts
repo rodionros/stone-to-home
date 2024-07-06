@@ -17,9 +17,13 @@ export const HeaderContainer = styled.header`
 `;
 
 export const Logo = styled.div`
-  width: 20%;
-  font-size: 24px;
-  font-weight: bold;
+    width: 20%;
+    font-size: 24px;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const Nav = styled.nav`

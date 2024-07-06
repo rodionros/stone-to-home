@@ -36,7 +36,7 @@ export const LinksWrapper = styled.ul`
     }
 `
 
-export const Link = styled.li`
+export const Link = styled.a`
     color: var(--white);
     font-size: 24px;
       

@@ -10,7 +10,7 @@ export const SectionWrapper = styled.div<SectionProps>`
     background: ${({$image}) => $image && `url(/images/${$image})`};
     
     width: 100%;
-    padding: 0 120px;
+    padding: 40px 120px;
 
     @media screen and (max-width: 1440px) {
         padding: 0 40px;
@@ -34,6 +34,7 @@ export const SectionTitle = styled.div`
 
     @media screen and (max-width: 768px) {
         font-size: 28px;
+        padding: 0 20px;
     }
   
     @media screen and (max-width: 480px) {

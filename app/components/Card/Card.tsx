@@ -4,7 +4,7 @@ import Image from "next/image";
 
 interface ICardProps {
   image: string
-  name: string
+  name?: string
   description: string
 }
 
@@ -22,7 +22,7 @@ const Card = ({name, description, image}: ICardProps) => {
           />
         </ImageWrapper>
         <CardTextWrapper>
-          <CardName>{name}</CardName>
+          {name && <CardName>{name}</CardName>}
           {description}
         </CardTextWrapper>
       </CardWrapper>

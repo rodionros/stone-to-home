@@ -2,14 +2,15 @@ import React from 'react';
 import { SectionTitle, SectionWrapper } from "@/app/components/Section/styles";
 
 interface ISectionProps {
-  title: string
+  title?: string
   children?: React.ReactNode
   image?: string
+  id?: string
 }
 
-const Section = ({ title, children, image }: ISectionProps) => {
+const Section = ({ title, children, image, id }: ISectionProps) => {
   return (
-      <section>
+      <section id={id}>
         {title && <SectionTitle>{title}</SectionTitle>}
         <SectionWrapper $image={image}>
           {children}

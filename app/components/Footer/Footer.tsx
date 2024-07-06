@@ -14,12 +14,12 @@ const Footer = ({links}: IFooterProps) => {
       <FooterWrapper>
         <LinksWrapper>
           {links.map((link) => (
-            <Link key={link.id}>{link.name}</Link>
+            <Link href={link.url} key={link.id}>{link.name}</Link>
           ))}
         </LinksWrapper>
         <PhoneWrapper>
           <PhoneIcon width={40} color="white"/>
-          {phone}
+          <a href="tel:+79803921912">{phone}</a>
         </PhoneWrapper>
       </FooterWrapper>
   );
